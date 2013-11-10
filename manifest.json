@@ -1,0 +1,15 @@
+{
+	"manifest_version":2,
+	
+	"name": "OKCupid message linkifier",
+	"description": "Tuns all URLs in OKCupid messages into active links.",
+	"version": "0.1",
+	"homepage_url":"http://www.farragar.com",
+	"content_scripts": [
+		{
+			"matches": ["http://www.okcupid.com/messages*"],
+			"js":["jquery.js","linkify.js"],
+			"run_at": "document_end"
+		}
+	]
+}
